@@ -28,5 +28,9 @@ int howmanypeopleareontheusa= 328000000;
 System.out.println("howmanypeopleareontheusa");
 System.out.println(howmanypeopleareontheusa);
 
+long howmanyelephantsareintheworld = 400000;
+System.out.println("howmanyelephantsareintheworld");
+System.out.println(howmanyelephantsareintheworld);
+
     }
 }
