@@ -3,25 +3,18 @@ package app;
 public class App {
 
     public static void main(String[] args) throws Exception {
- String person1 = "zach";
- String person2 = "kyle";
- String verb1 = "bat";
- String verb2 = "car";
- String verb3 = "plane";
- String food = "pizza";
- String dayofweek = "saturday";
- String place1 = "the zoo";
- String place2 = "zach's house";
- String adjective1 = "brave";
- String adjective2 ="calm";
-
-
-
- System.out.println(person1 + " is a programmer who likes to " + verb1);
- System.out.println( dayofweek + " they make a " + adjective1);
- System.out.println(food + " for breakfast and " + verb2 + " at " + place1 + " with " + person2);
- System.out.println("Sometimes they go to the " + adjective2 + " " + place2 + " with " + person2 + " so that they can " + verb3 + " together");
-
+        
+        for (int i = 10; i <= 20; i = i +1){
+System.out.println("the count is "+i);
+for (int l = 10; l <= 100; l = l +1)
+System.out.println("the count is "+l);
+for (int p = 1000; p <= 256000; p = p + 1)
+System.out.println("the count is " + p);
+for (int r = 11; r <= 12; r = r + 1)
+System.out.println("the count is" +r);
+for (int e = 10; e >= 0; e = e + 1)
+System.out.println("the count is " +e);
+        }
 
  
 
