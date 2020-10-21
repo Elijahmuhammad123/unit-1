@@ -1,19 +1,37 @@
 package app;
 
-//import  java.util.Scanner;
+import java.util.Scanner;
 
 public class App {
 
     public static void main(String[] args) throws Exception {
 
-    int i = 0;
+   int targetnum = 75;
+   boolean isfinished= false;
+   while (isfinished == false) {
+       Scanner input = new Scanner(System.in);
+   System.out.println("guess a number between 0 and 100.");
+   int guess = input.nextInt();
+   input.nextLine();
 
-       while (i <= 1000) {
-           System.out.println("the number is " + i);
-           i = i +1;
+
+   if (guess == targetnum){
+       System.out.println("correct");
+       isfinished = true;
+   }
+
+   else{
+       if (guess > targetnum){
+           System.out.println("high");
        }
-       System.out.println();
+       else{
+           System.out.println("low");
+       }
+   }
 
+
+   }
+   
 
     }
 }
