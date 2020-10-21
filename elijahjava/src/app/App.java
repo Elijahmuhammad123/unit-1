@@ -6,32 +6,51 @@ public class App {
 
     public static void main(String[] args) throws Exception {
 
-   int targetnum = 75;
-   boolean isfinished= false;
-   while (isfinished == false) {
-       Scanner input = new Scanner(System.in);
-   System.out.println("guess a number between 0 and 100.");
-   int guess = input.nextInt();
-   input.nextLine();
+ Scanner input = new Scanner(System.in);
+ System.out.println("please enter password.");
+ int i = 0;
+ String pattern = input.nextLine();
 
+ while(i != 3){
+if(pattern.equals("SK8orDie")){
+    System.out.println("you have found the password.");
+    System.exit(1);
+}
+else{
+    System.out.println("wrong password. try again.");
+    i = i + 1;
+}
+ }
+ System.out.println("please enter a password.");
+ String pattern2 = input.nextLine();
 
-   if (guess == targetnum){
-       System.out.println("correct");
-       isfinished = true;
-   }
+ if( pattern2.equals("SK8orDie")){
+ System.out.println("you have found the password.");
+ System.exit(2);    
+ }
+ else{
+     System.out.println("Wrong password. Try again.");
+     i = i + 1;
+ }
+ System.out.println("please enter password.");
+ String pattern3 = input.nextLine();
 
-   else{
-       if (guess > targetnum){
-           System.out.println("high");
+ if (pattern3.equals("SK8orDie")){
+     System.out.println("you have found the password.");
+     System.exit(3);
+ }
+ else {
+     System.out.println("wrong password.");
+     i = i + 1;
+ }
+ if(i == 3){
+           System.out.println("too many attempts. rerun program.");
+           System.exit(1);
        }
-       else{
-           System.out.println("low");
+input.close();
        }
-   }
-
-
+      
    }
    
 
-    }
-}
+    
